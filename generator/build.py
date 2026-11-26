@@ -202,7 +202,7 @@ def marquee(cls=''):
 
 # ================= HOME =================
 ROOMS=[('bath','Bathrooms','g16','Master baths, full guest-bath refreshes and walk-in showers, from demo to the last fixture.','deanne','his crews left each night with it being neater than it was before the demo.','Deanne Brewster'),
-('kitchen','Kitchens','g11','Islands, cabinets, countertops and lighting, planned around how you actually cook and gather.','teresa','really GREAT work done on my kitchen LOVED IT!!','Teresa Martinez'),
+('kitchen','Kitchens','g11','Islands, cabinets, countertops and pendant lighting for bright, open kitchens.','teresa','really GREAT work done on my kitchen LOVED IT!!','Teresa Martinez'),
 ('tile','Tile & floors','g20','Large-format porcelain, patterned feature walls, shower niches and floors laid straight and level.','tammy','from whole house renovations to small tile jobs and I am always pleased with the results.','tammy patton'),
 ('cab','Cabinetry & vanities','g22','Floating wood vanities, painted shaker cabinets, backlit mirrors and built-ins.','tracy','They do excellent work and aim to always make the customer happy.','Tracy Thomas'),
 ('fire','Fireplace walls','g15','Stacked-stone fireplace surrounds with lit floating shelves and built-in cabinets.','sadaf','Danny and his team renovated my master bath, kitchen and fireplace. Excellent work !','Sadaf Khan')]
@@ -225,7 +225,7 @@ HOME=f'''<section class="hero"><div class="hero-g wrap">
 <div class="seal" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="sc" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"/></defs><text><textPath href="#sc">NEW BUILDING · RENOVATIONS · FORT WORTH TX ·</textPath></text></svg>{TXSTAR}</div></div>
 </div><div class="outline-x hero-o" aria-hidden="true">RENOVATIONS</div></section>
 {marquee()}
-<section class="sec stone" id="rooms"><div class="wrap"><div class="shead" data-r><div><p class="kicker">Pick a room</p><h2 class="split">Every room in the house, <em>start to finish</em></h2></div><p>Tap through the kinds of work Danny’s crew shows off most on their Google profile. Every photo here comes from their own Google profile.</p></div>
+<section class="sec stone" id="rooms"><div class="wrap"><div class="shead" data-r><div><p class="kicker">Pick a room</p><h2 class="split">Every room in the house, <em>start to finish</em></h2></div><p>Tap through the kinds of work Danny’s crew shows off most. Every photo here comes from their own Google profile.</p></div>
 {room_sel()}</div></section>
 <section class="sec slate why"><div class="wrap why-g"><div class="why-v" data-r><div class="frame">{pic("g10",sizes="(max-width:900px) 100vw, 42vw")}</div><p class="cap">On the job: large-format tile going up around a glass block window.</p></div>
 <div class="why-c"><p class="kicker lt">Why homeowners call back</p><h2 class="split">What clients say, <em>again and again</em></h2>
