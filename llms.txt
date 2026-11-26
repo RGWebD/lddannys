@@ -1,0 +1,19 @@
+# L&D Danny’s New Building and Renovations
+
+> Remodeler in Fort Worth, Texas: bathroom and master bath remodels, kitchen remodels, tile work, cabinetry and vanities, fireplace and feature walls, and whole-home remodels. Rated 5.0 stars from 13 Google reviews (all five-star).
+
+- Name on Google: L&D DANNY’S NEW BUILDING AND RENOVATIONS
+- Category: Remodeler
+- Address: 5607 Humbert Ave, Fort Worth, TX 76107
+- Phone: (817) 271-9465
+- Hours: Monday–Friday 8 AM–5 PM; Saturday 9 AM–4 PM; Sunday closed. Thanksgiving and Black Friday hours might differ.
+- Accessibility: wheelchair-accessible entrance and parking lot
+- Google Maps: https://www.google.com/maps/place/L%26D+DANNY%E2%80%99S+NEW+BUILDING+AND+RENOVATIONS/@32.7185411,-97.4066008,14z/data=!4m6!3m5!1s0x864e73c94cb11ab7:0x7b06e44c6ac338e5!8m2!3d32.7185411!4d-97.4066008!16s%2Fg%2F11v3kzjpg_
+- Services are drawn from the business's own Google photos and its customer reviews. Clients mention Danny (also Daniel) and his crew, tidy job sites, renovation ideas, and repeat work over several years.
+
+## Pages
+- [Home](https://rgwebd.github.io/lddannys/): overview, room-by-room work, reviews
+- [Services](https://rgwebd.github.io/lddannys/services.html): each service in detail and how a remodel goes
+- [Our Work](https://rgwebd.github.io/lddannys/work.html): photo gallery of real projects
+- [Reviews](https://rgwebd.github.io/lddannys/reviews.html): all quoted Google reviews, word for word
+- [Contact](https://rgwebd.github.io/lddannys/contact.html): phone, hours, map, FAQ and a text-us form
