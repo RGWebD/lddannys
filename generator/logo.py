@@ -113,7 +113,7 @@ for v,(fg,acc) in variants.items():
     em=emblem(fg,acc)
     save(f'emblem-{v}',svgdoc(200,240,em))
     wm,W=wordmark(0,62,fg,acc,64)
-    save(f'wordmark-{v}',svgdoc(int(W)+4,96,wm))
+    save(f'wordmark-{v}',svgdoc(int(W)+4,112,wm))
     # horizontal: emblem 120 tall + wordmark
     em2=emblem(fg,acc,x=0,y=0,s=0.5)
     wm2,W2=wordmark(118,72,fg,acc,52)

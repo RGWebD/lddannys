@@ -78,7 +78,7 @@ p{margin:0 0 1em}
 .hero{position:relative;background:radial-gradient(1200px 700px at 85% 10%,#2b3843 0%,transparent 60%),linear-gradient(180deg,var(--ink),var(--slate));color:var(--stone);padding:150px 0 110px;overflow:hidden}
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cg fill='none' stroke='%23d6b47c' stroke-opacity='.08'%3E%3Cpath d='M-50 620 C 150 560 220 420 410 380 S 700 300 860 120'/%3E%3Cpath d='M-50 700 C 200 650 300 520 480 470 S 760 380 860 260'/%3E%3Cpath d='M120 -20 C 160 120 260 180 300 320'/%3E%3C/g%3E%3C/svg%3E") 0 0/800px}
 .hero-g{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;position:relative;z-index:2}.hero-g>*{min-width:0}
-.hero-h{font-size:clamp(50px,6.6vw,104px);line-height:.98}
+.hero-h{font-size:clamp(50px,5.5vw,86px);line-height:1}
 .hero-h em{display:inline-block}
 .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .chip{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:rgba(239,232,220,.06);border:1px solid rgba(214,180,124,.28);color:var(--stone);text-decoration:none;font-size:14px}
@@ -94,7 +94,7 @@ p{margin:0 0 1em}
 .polar img{aspect-ratio:4/5;object-fit:cover;border-radius:3px;width:100%}
 .polar figcaption{font-family:var(--fd);font-style:italic;color:var(--slate);font-size:14px;text-align:center;margin-top:8px;line-height:1.2}
 .seal{position:absolute;right:-6px;top:38%;width:118px;height:118px;z-index:4;color:var(--brass2);display:grid;place-items:center;background:var(--ink);border-radius:50%;box-shadow:0 0 0 1px rgba(214,180,124,.4)}
-.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
+.seal>svg:first-child{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
 .seal text{font:13.5px var(--fk);letter-spacing:.22em;fill:var(--brass2)}
 .seal .txs{width:30px;height:30px}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -143,12 +143,12 @@ p{margin:0 0 1em}
 .num small{font-size:.38em;color:var(--stone);font-weight:600}
 .st p{margin:10px 0 0;color:#c9c2b5;font-size:15px}
 /* reviews */
-.q-big{position:absolute;right:4vw;top:-.18em;font-family:var(--fd);font-size:min(40vw,520px);line-height:1;color:rgba(184,146,90,.12);pointer-events:none}
+.q-big{position:absolute;right:4vw;top:.02em;font-family:var(--fd);font-size:min(40vw,520px);line-height:1;color:rgba(184,146,90,.12);pointer-events:none}
 .rv-card{margin:0;background:#fbf8f2;border:1px solid var(--stone3);border-radius:18px;padding:30px;box-shadow:0 20px 40px -30px rgba(18,23,26,.45);height:100%;display:flex;flex-direction:column}
 .rv-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.rv-top .g{font:12px var(--fk);letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
 .rv-card blockquote{margin:0 0 18px;flex:1}.rv-card blockquote p{font-family:var(--fd);font-size:19px;line-height:1.5;margin:0}
 .rv-card figcaption b{display:block;font-weight:600}.rv-card figcaption span{font-size:13.5px;color:var(--mut)}
-.trunc{display:inline-block;margin-top:6px;font-size:12px;color:var(--brass-d);letter-spacing:.04em}
+.trunc{display:block;margin-top:6px;font-size:12px;color:var(--brass-d);letter-spacing:.04em}
 .rcar-vp{overflow:hidden}
 .rcar-track{display:flex;transition:transform .7s var(--ease)}
 .rcar-s{flex:0 0 calc(100%/3);padding:0 10px;min-width:0}
@@ -309,7 +309,7 @@ p{margin:0 0 1em}
 /* mobile bar + demo */
 .mbar{position:fixed;left:10px;right:10px;bottom:10px;z-index:90;display:none;gap:8px;padding:8px;border-radius:999px;background:rgba(18,23,26,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(214,180,124,.25);transform:translateY(140%);transition:transform .45s var(--ease)}
 .mbar.show{transform:none}.mbar .btn{flex:1;min-height:46px;padding:0 12px;font-size:14.5px}
-.demo{position:fixed;left:16px;bottom:16px;z-index:80;display:flex;align-items:center;gap:8px;padding:8px 8px 8px 14px;border-radius:999px;background:rgba(239,232,220,.95);color:var(--slate);font-size:12.5px;box-shadow:0 10px 30px -10px rgba(0,0,0,.4);border:1px solid var(--stone3)}
+.demo{position:fixed;right:16px;bottom:16px;z-index:80;display:flex;align-items:center;gap:8px;padding:8px 8px 8px 14px;border-radius:999px;background:rgba(239,232,220,.95);color:var(--slate);font-size:12.5px;box-shadow:0 10px 30px -10px rgba(0,0,0,.4);border:1px solid var(--stone3)}
 .demo button{width:26px;height:26px;border-radius:50%;border:0;background:var(--slate);color:var(--stone);cursor:pointer;display:grid;place-items:center;padding:0}.demo button svg{width:14px}
 .demo.gone{display:none}
 /* loader */
@@ -349,7 +349,7 @@ p{margin:0 0 1em}
 .wk{padding:110px 0 60px}.cmp{aspect-ratio:4/3.3}
 .rsum{grid-template-columns:1fr}.ct-card,.qf{padding:28px 22px}.fr2{grid-template-columns:1fr;gap:0}
 .ftr-g{grid-template-columns:1fr}.map{aspect-ratio:1}
-.mbar{display:flex}.demo{display:none}.mbar.show~.demo:not(.gone){display:flex;bottom:84px;left:12px}
+.mbar{display:flex}.demo{display:none}.mbar.show~.demo:not(.gone){display:flex;bottom:84px;left:12px;right:auto}
 .ftr{padding-bottom:110px}.js [data-r]{transform:translateY(24px)}
 .btn.xl{min-height:56px;padding:0 22px;font-size:16px;max-width:100%}
 .ctas .btn{flex:1 1 auto}
@@ -357,6 +357,7 @@ p{margin:0 0 1em}
 .bigtel{font-size:clamp(28px,8.4vw,40px)}
 .tlb{padding:60px 10px}.tlb-p,.tlb-n{top:auto!important;bottom:16px;transform:none!important}.tlb-p{left:calc(50% - 64px)}.tlb-n{right:calc(50% - 64px)}
 .hs-l{width:180px;font-size:13px}}
+@media(max-width:600px){.gal{columns:2;column-gap:10px}.gi{margin-bottom:10px}}
 @media(max-width:420px){.hero-h{font-size:46px}h2{font-size:33px}.rs-tabs button{font-size:17px;padding:12px 14px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 .js [data-r],.js .stagger>*{opacity:1!important;transform:none!important}.split .w>span{transform:none!important}.ldr{display:none}.marq-t{transform:none}}

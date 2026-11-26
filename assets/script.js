@@ -31,7 +31,7 @@ const fmt=h=>{const H12=h%12||12;return H12+(h<12?' AM':' PM')};
 let cls,txt;
 if(hol){cls='unk';txt='Holiday hours may vary · call'}
 else{const t=H[wd];if(t&&hr>=t[0]&&hr<t[1]){cls='open';txt='Open now · until '+fmt(t[1])}
-else{let n=wd,add=0;if(t&&hr<t[0]){}else{do{n=(n+1)%7;add++}while(!H[n])}const nt=H[n];cls='closed';txt='Closed · opens '+(add===0?'today':add===1?'tomorrow':['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][n])+' '+fmt(nt[0])}}
+else{let n=wd,add=0;if(t&&hr<t[0]){}else{do{n=(n+1)%7;add++}while(!H[n])}const nt=H[n];cls='closed';const nd=new Date(Date.UTC(yr,mo-1,dy+add)),nhol=nd.getUTCMonth()===10&&(nd.getUTCDate()===tg||nd.getUTCDate()===tg+1);txt=nhol?'Closed now · holiday hours may vary':'Closed · opens '+(add===0?'today':add===1?'tomorrow':['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][n])+' '+fmt(nt[0])}}
 els.forEach(el=>{el.classList.add(cls);el.querySelector('span').textContent=txt});
 $$('.hours tr[data-d="'+wd+'"]').forEach(r=>r.classList.add('today'))})();
 /* counters */

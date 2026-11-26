@@ -268,7 +268,7 @@ SV=[('bath','Bathroom remodels','Master baths, guest baths and everything in the
  'A tall stone fireplace wall can anchor a whole living room. One client had Danny’s team renovate her fireplace along with her master bath and kitchen.','sadaf'),
 ('whole','Whole-home remodels','Room after room, one crew','g14','g23',
  ['Whole-house renovations','Wood floors and trim','Dining rooms and bedrooms','Laundry rooms and home offices','Repairs and home improvement'],
- 'Several clients hired the crew for whole-home remodels, and kept calling for smaller jobs after.','jill')]
+ 'Several clients hired the crew for whole-home remodels, and some have kept them on project after project.','jill')]
 def svsec(i,k,t,sub,a,b,items,blurb,rk):
     li=''.join(f'<li>{IC["hand"]}<span>{e(x)}</span></li>' for x in items)
     second=f'<div class="sv-b frame">{pic(b,sizes="(max-width:900px) 60vw, 22vw")}</div>' if b else ''
@@ -297,8 +297,8 @@ gal=''.join(f'<li class="gi" data-cat="{c}"><button type="button" class="gb" ari
 filt=''.join(f'<button type="button" class="fb{" on" if k=="all" else ""}" data-f="{k}" aria-pressed="{"true" if k=="all" else "false"}">{t}</button>' for k,t in CATS)
 HS=[(0.46,0.52,0.60,'Stacked-stone fireplace surround','Natural stone runs from the hearth to the ceiling.'),
 (0.14,0.67,0.70,'Lit floating shelves','Shelves with lighting set into the wall beside the stone.'),
-(0.16,0.86,0.88,'Built-in cabinets','Dark lower cabinets under the shelves on both sides.'),
-(0.75,0.15,0.17,'Exposed ceiling beam','A dark beam across the tall vaulted ceiling.'),
+(0.16,0.91,0.92,'Built-in cabinets','Dark lower cabinets under the shelves on both sides.'),
+(0.80,0.17,0.18,'Exposed ceiling beam','A dark beam across the tall vaulted ceiling.'),
 (0.56,0.57,0.56,'TV set into the stone','The TV mounts flush in the fireplace wall.')]
 hs=''.join(f'<button type="button" class="hs" style="--x:{x*100:.1f}%;--y:{y*100:.1f}%;--ym:{ym*100:.1f}%" aria-label="{e(t)}"><span class="hs-d" aria-hidden="true"></span><span class="hs-l"><b>{e(t)}</b>{e(d)}</span></button>' for x,y,ym,t,d in HS)
 WORK=f'''<section class="phero wk"><div class="wrap wk-g"><div class="wk-c"><nav class="bc" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Our Work</span></nav>
@@ -319,14 +319,14 @@ CHIPS=[('Master bath renovation',3),('Whole home remodel',3),('Top-notch work',3
 chips=''.join(f'<li><span>{e(t)}</span><b>{n}</b></li>' for t,n in CHIPS)
 bars=''.join(f'<div class="bar"><span>{s}★</span><i><b style="--w:{100 if s==5 else 0}%"></b></i><em>{13 if s==5 else 0}</em></div>' for s in (5,4,3,2,1))
 allrev=''.join(rcard(r[0],'rv-card m') for r in REV)
-REVP=phero('Reviews · Google','Five stars, <em>thirteen times over</em>','Every Google review for L&amp;D Danny’s is five stars. Here they are, quoted word for word, with the dates shown on Google.','g22','Reviews','50% 40%')+\
+REVP=phero('Reviews · Google','Five stars, <em>thirteen times over</em>','Every Google review for L&amp;D Danny’s is five stars. Here they are, quoted word for word, with the dates shown on Google.','g05','Reviews','50% 45%')+\
 f'''<section class="sec stone"><div class="wrap rsum"><div class="rsum-s" data-r><div class="big" data-count="5.0" data-dec="1"><b>5.0</b></div>{stars(RATING,'lg')}<p>{COUNT} Google reviews</p>
 <a class="btn ghost-d" href="{GREV}" target="_blank" rel="noopener"><span>Read them on Google</span>{IC["arrow"]}</a></div>
 <div class="rsum-b" data-r>{bars}<p class="note">Google shows all {COUNT} reviews as five stars.</p></div>
 <div class="rsum-c" data-r><h2 class="h3">What reviewers mention most</h2><ul class="topics">{chips}</ul><p class="note">Topic counts as shown on Google.</p></div></div></section>
 <section class="sec stone2"><div class="wrap"><div class="shead" data-r><div><p class="kicker">Word for word</p><h2 class="split">Ten of the <em>thirteen reviews</em></h2></div><p>Three were shortened by Google, shown with “…” exactly as they appear. Spelling is left as written.</p></div>
 <div class="masonry">{allrev}</div>
-<div class="rv-side" data-r><div class="frame">{pic("g05",sizes="(max-width:900px) 100vw, 30vw")}</div><p>“Danny did the complete remodel of my bathroom, he is professional and serious, I highly recommend him.” <span>— Nitza Rangel</span></p></div></div></section>
+<div class="rv-side" data-r><div class="frame">{pic("g09",sizes="(max-width:900px) 100vw, 30vw")}</div><p>“Danny did the complete remodel of my bathroom, he is professional and serious, I highly recommend him.” <span>— Nitza Rangel</span></p></div></div></section>
 {cta_band("Join the <em>five-star list</em>","Call L&amp;D Danny’s to talk about your bathroom, kitchen, tile or whole-home remodel.")}'''
 
 # ================= CONTACT =================
